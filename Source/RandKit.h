@@ -5,7 +5,7 @@
 // file LICENSE at the root of the source code distribution tree.
 
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for RandKit.
 FOUNDATION_EXPORT double RandKitVersionNumber;

@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C92B5D01CD6996B009794F1 /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5CF1CD6996B009794F1 /* Distribution.swift */; };
+		8C92B5D11CD6996B009794F1 /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5CF1CD6996B009794F1 /* Distribution.swift */; };
+		8C92B5DA1CD69C17009794F1 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5D91CD69C17009794F1 /* Value.swift */; };
+		8C92B5DB1CD69C17009794F1 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5D91CD69C17009794F1 /* Value.swift */; };
+		8C92B5E71CD6B4FF009794F1 /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5E61CD6B4FF009794F1 /* RandomTests.swift */; };
+		8C92B5E81CD6B4FF009794F1 /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5E61CD6B4FF009794F1 /* RandomTests.swift */; };
 		8CBFE8311CD41692002A8929 /* RandKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBFE8261CD41692002A8929 /* RandKit.framework */; };
 		8CBFE85C1CD416FF002A8929 /* RandKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBFE8521CD416FF002A8929 /* RandKit.framework */; };
 		8CBFE86E1CD41773002A8929 /* RandKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBFE86B1CD41773002A8929 /* RandKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8CBFE86F1CD41780002A8929 /* RandKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBFE86B1CD41773002A8929 /* RandKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8CBFE8781CD418A5002A8929 /* RandKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8711CD41898002A8929 /* RandKitTests.swift */; };
-		8CBFE8791CD418A7002A8929 /* RandKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8711CD41898002A8929 /* RandKitTests.swift */; };
-		8CBFE87B1CD418EC002A8929 /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE87A1CD418EC002A8929 /* Distribution.swift */; };
-		8CBFE87C1CD418EC002A8929 /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE87A1CD418EC002A8929 /* Distribution.swift */; };
+		8CBFE87E1CD41A56002A8929 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE87D1CD41A56002A8929 /* RandomGenerator.swift */; };
+		8CBFE87F1CD41A56002A8929 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE87D1CD41A56002A8929 /* RandomGenerator.swift */; };
+		8CBFE8811CD41AA4002A8929 /* RandomValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8801CD41AA4002A8929 /* RandomValue.swift */; };
+		8CBFE8821CD41AA4002A8929 /* RandomValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8801CD41AA4002A8929 /* RandomValue.swift */; };
+		8CBFE8851CD42873002A8929 /* Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8841CD42873002A8929 /* Uniform.swift */; };
+		8CBFE8861CD42873002A8929 /* Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8841CD42873002A8929 /* Uniform.swift */; };
+		8CBFE8881CD4289B002A8929 /* Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8871CD4289B002A8929 /* Normal.swift */; };
+		8CBFE8891CD4289B002A8929 /* Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8871CD4289B002A8929 /* Normal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C92B5CF1CD6996B009794F1 /* Distribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distribution.swift; sourceTree = "<group>"; };
+		8C92B5D91CD69C17009794F1 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		8C92B5E61CD6B4FF009794F1 /* RandomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomTests.swift; sourceTree = "<group>"; };
 		8CBFE8261CD41692002A8929 /* RandKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBFE8301CD41692002A8929 /* RandKitTests.iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandKitTests.iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBFE8521CD416FF002A8929 /* RandKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,8 +55,10 @@
 		8CBFE86A1CD41773002A8929 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CBFE86B1CD41773002A8929 /* RandKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandKit.h; sourceTree = "<group>"; };
 		8CBFE8701CD41898002A8929 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CBFE8711CD41898002A8929 /* RandKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandKitTests.swift; sourceTree = "<group>"; };
-		8CBFE87A1CD418EC002A8929 /* Distribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distribution.swift; sourceTree = "<group>"; };
+		8CBFE87D1CD41A56002A8929 /* RandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
+		8CBFE8801CD41AA4002A8929 /* RandomValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomValue.swift; sourceTree = "<group>"; };
+		8CBFE8841CD42873002A8929 /* Uniform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uniform.swift; sourceTree = "<group>"; };
+		8CBFE8871CD4289B002A8929 /* Normal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Normal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +95,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C92B5D51CD69BF6009794F1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8C92B5D91CD69C17009794F1 /* Value.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		8CBFE81C1CD41692002A8929 = {
 			isa = PBXGroup;
 			children = (
-				8CBFE86A1CD41773002A8929 /* Info.plist */,
 				8CBFE8691CD41773002A8929 /* Source */,
 				8CBFE86C1CD41773002A8929 /* Tests */,
+				8CBFE86A1CD41773002A8929 /* Info.plist */,
 				8CBFE8271CD41692002A8929 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -105,7 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				8CBFE86B1CD41773002A8929 /* RandKit.h */,
-				8CBFE87A1CD418EC002A8929 /* Distribution.swift */,
+				8C92B5D51CD69BF6009794F1 /* Utilities */,
+				8CBFE8831CD42873002A8929 /* Distributions */,
+				8CBFE87D1CD41A56002A8929 /* RandomGenerator.swift */,
+				8CBFE8801CD41AA4002A8929 /* RandomValue.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -114,9 +140,19 @@
 			isa = PBXGroup;
 			children = (
 				8CBFE8701CD41898002A8929 /* Info.plist */,
-				8CBFE8711CD41898002A8929 /* RandKitTests.swift */,
+				8C92B5E61CD6B4FF009794F1 /* RandomTests.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		8CBFE8831CD42873002A8929 /* Distributions */ = {
+			isa = PBXGroup;
+			children = (
+				8CBFE8871CD4289B002A8929 /* Normal.swift */,
+				8CBFE8841CD42873002A8929 /* Uniform.swift */,
+				8C92B5CF1CD6996B009794F1 /* Distribution.swift */,
+			);
+			path = Distributions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,7 +329,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CBFE87B1CD418EC002A8929 /* Distribution.swift in Sources */,
+				8CBFE8881CD4289B002A8929 /* Normal.swift in Sources */,
+				8CBFE8851CD42873002A8929 /* Uniform.swift in Sources */,
+				8C92B5DA1CD69C17009794F1 /* Value.swift in Sources */,
+				8CBFE87E1CD41A56002A8929 /* RandomGenerator.swift in Sources */,
+				8C92B5D01CD6996B009794F1 /* Distribution.swift in Sources */,
+				8CBFE8811CD41AA4002A8929 /* RandomValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CBFE8781CD418A5002A8929 /* RandKitTests.swift in Sources */,
+				8C92B5E71CD6B4FF009794F1 /* RandomTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +350,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CBFE87C1CD418EC002A8929 /* Distribution.swift in Sources */,
+				8CBFE8891CD4289B002A8929 /* Normal.swift in Sources */,
+				8CBFE8861CD42873002A8929 /* Uniform.swift in Sources */,
+				8C92B5DB1CD69C17009794F1 /* Value.swift in Sources */,
+				8CBFE87F1CD41A56002A8929 /* RandomGenerator.swift in Sources */,
+				8C92B5D11CD6996B009794F1 /* Distribution.swift in Sources */,
+				8CBFE8821CD41AA4002A8929 /* RandomValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CBFE8791CD418A7002A8929 /* RandKitTests.swift in Sources */,
+				8C92B5E81CD6B4FF009794F1 /* RandomTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,16 +512,19 @@
 		8CBFE83E1CD41692002A8929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aidangomez.RandKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8CBFE83F1CD41692002A8929 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.aidangomez.RandKitTests;
@@ -531,6 +580,7 @@
 		8CBFE8671CD416FF002A8929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -539,12 +589,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.aidangomez.RandKit-OSXTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		8CBFE8681CD416FF002A8929 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Tests/Info.plist;
