@@ -11,23 +11,3 @@ public protocol DistributionType {
     // Return a random value
     func random() -> Element
 }
-
-public class UniformDistribution<Element: ValueType>: DistributionType {
-    let range: Range<Int>
-
-    public init(range: Range<Int>) {
-        self.range = range
-    }
-
-    public func random() -> Element {
-        return uniform(range)
-    }
-}
-
-public class NormalDistribution<Element: ValueType>: DistributionType {
-    public init() {}
-
-    public func random() -> Element {
-        return normal()
-    }
-}

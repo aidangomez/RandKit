@@ -21,6 +21,7 @@ public func random<T: ValueType>(range: Range<Int>) -> T {
     return uniform(range)
 }
 
+/// Return `true` with probability `p`
 public func probability<T: ValueType>(p: T) -> Bool {
     let v = random(T(1))
     return v < p

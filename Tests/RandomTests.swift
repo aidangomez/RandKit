@@ -13,24 +13,67 @@ class RandomTests: XCTestCase {
 
         let fSamples: [Float] = (0..<n).map({ _ in random() })
         let dSamples: [Double] = (0..<n).map({ _ in random() })
-        let iSamples: [Int] = (0..<n).map({ _ in random() })
+
+        for i in 0..<n {
+            let fSample = fSamples[i]
+            let dSample = dSamples[i]
+            XCTAssert(0 <= fSample && fSample < 1)
+            XCTAssert(0 <= dSample && dSample < 1)
+        }
+
+        let fMean = fSamples.reduce(0.0, combine: +) / Float(n)
+        let dMean = dSamples.reduce(0.0, combine: +) / Double(n)
+
+        XCTAssertEqualWithAccuracy(fMean, 0.5, accuracy: 0.007)
+        XCTAssertEqualWithAccuracy(dMean, 0.5, accuracy: 0.007)
+    }
+
+    func testRandomUniformRange() {
+        let range = -500...1000
+        let n = 10000
+
+        let fSamples: [Float] = (0..<n).map({ _ in random(range) })
+        let dSamples: [Double] = (0..<n).map({ _ in random(range) })
+
+        for i in 0..<n {
+            let fSample = fSamples[i]
+            let dSample = dSamples[i]
+            XCTAssert(Float(range.startIndex) <= fSample && fSample < Float(range.endIndex))
+            XCTAssert(Double(range.startIndex) <= dSample && dSample < Double(range.endIndex))
+        }
+
+        let fMean = fSamples.reduce(0.0, combine: +) / Float(n)
+        let dMean = dSamples.reduce(0.0, combine: +) / Double(n)
+
+        XCTAssertEqualWithAccuracy(fMean, 250, accuracy: 7)
+        XCTAssertEqualWithAccuracy(dMean, 250, accuracy: 7)
+    }
+
+    func testRandomUniformMax() {
+        let max = 12345
+        let n = 10000
+
+        let fSamples: [Float] = (0..<n).map({ _ in random(Float(max)) })
+        let dSamples: [Double] = (0..<n).map({ _ in random(Double(max)) })
+        let iSamples: [Int] = (0..<n).map({ _ in random(max) })
 
         for i in 0..<n {
             let fSample = fSamples[i]
             let dSample = dSamples[i]
             let iSample = iSamples[i]
-            XCTAssert(0 <= fSample && fSample < 1)
-            XCTAssert(0 <= dSample && dSample < 1)
-            XCTAssert(0 <= iSample && iSample < Int(INT32_MAX))
+            XCTAssert(0 <= fSample && fSample < Float(max))
+            XCTAssert(0 <= dSample && dSample < Double(max))
+            XCTAssert(0 <= iSample && iSample < max)
         }
 
         let fMean = fSamples.reduce(0.0, combine: +) / Float(n)
         let dMean = dSamples.reduce(0.0, combine: +) / Double(n)
         let iMean = Double(iSamples.reduce(0, combine: +)) / Double(n)
 
-        XCTAssertEqualWithAccuracy(fMean, 0.5, accuracy: 0.05)
-        XCTAssertEqualWithAccuracy(dMean, 0.5, accuracy: 0.05)
-        XCTAssertEqualWithAccuracy(iMean, Double(INT32_MAX) / 2.0, accuracy: Double(INT32_MAX) * 0.05)
+        let expected = Double(max) / 2.0
+        XCTAssertEqualWithAccuracy(fMean, Float(expected), accuracy: Float(max) * 0.007)
+        XCTAssertEqualWithAccuracy(dMean, expected, accuracy: Double(max) * 0.007)
+        XCTAssertEqualWithAccuracy(iMean, expected, accuracy: Double(max) * 0.007)
     }
 
     func testRandomNormal() {

@@ -5,6 +5,14 @@
 // file LICENSE at the root of the source code distribution tree.
 
 
+public class NormalDistribution<Element: ValueType>: DistributionType {
+    public init() {}
+
+    public func random() -> Element {
+        return normal()
+    }
+}
+
 /// https://en.wikipedia.org/wiki/Marsaglia_polar_method
 func marsagliaPolarMethod<T: ValueType>() -> T {
     var x1 = T(0)
@@ -41,5 +49,5 @@ public func normal<T: ValueType>() -> T {
 }
 
 public func normal() -> Int {
-    return Int(marsagliaPolarMethod())
+    return marsagliaPolarMethod()
 }
