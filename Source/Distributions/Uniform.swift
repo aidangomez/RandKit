@@ -5,8 +5,10 @@
 // file LICENSE at the root of the source code distribution tree.
 
 
-public class UniformDistribution<Element: ValueType>: DistributionType {
-    let range: Range<Int>
+public class ContinuousUniformDistribution: ContinuousDistributionType {
+    public typealias Element = ContinuousValue
+
+    public let range: Range<Int>
 
     public init(range: Range<Int>) {
         self.range = range
@@ -17,24 +19,38 @@ public class UniformDistribution<Element: ValueType>: DistributionType {
     }
 }
 
-public func uniform<T: ValueType>() -> T {
-    return T(arc4random()) / T(UINT32_MAX)
+public class DiscreteUniformDistribution: DiscreteDistributionType {
+    public typealias Element = DiscreteValue
+
+    public let range: Range<Int>
+
+    public init(range: Range<Int>) {
+        self.range = range
+    }
+
+    public func random() -> Element {
+        return uniform(range)
+    }
+}
+
+public func uniform() -> ContinuousValue {
+    return ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)
 }
 
 /// Return values uniformly distributed over `range`
-public func uniform<T: ValueType>(range: Range<Int>) -> T {
-    return T(range.count) * T(arc4random()) / T(UINT32_MAX) + T(range.startIndex)
+public func uniform(range: Range<Int>) -> ContinuousValue {
+    return ContinuousValue(range.count) * ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX) + ContinuousValue(range.startIndex)
 }
 
-public func uniform(range: Range<Int>) -> Int {
-    return Int(arc4random_uniform(UInt32(range.count))) + range.startIndex
+public func uniform(range: Range<Int>) -> DiscreteValue {
+    return DiscreteValue(arc4random_uniform(UInt32(range.count))) + range.startIndex
 }
 
 /// Return values uniformly distributed between `[0, max)`
-public func uniform<T: ValueType>(max: T) -> T {
-    return T(max) * T(arc4random()) / T(UINT32_MAX)
+public func uniform(max: ContinuousValue) -> ContinuousValue {
+    return ContinuousValue(max) * ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)
 }
 
-public func uniform(max: Int) -> Int {
-    return Int(arc4random_uniform(UInt32(max)))
+public func uniform(max: DiscreteValue) -> DiscreteValue {
+    return DiscreteValue(arc4random_uniform(UInt32(max)))
 }

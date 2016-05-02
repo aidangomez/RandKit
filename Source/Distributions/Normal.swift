@@ -5,7 +5,9 @@
 // file LICENSE at the root of the source code distribution tree.
 
 
-public class NormalDistribution<Element: ValueType>: DistributionType {
+public class NormalDistribution: ContinuousDistributionType {
+    public typealias Element = ContinuousValue
+
     public init() {}
 
     public func random() -> Element {
@@ -14,22 +16,7 @@ public class NormalDistribution<Element: ValueType>: DistributionType {
 }
 
 /// https://en.wikipedia.org/wiki/Marsaglia_polar_method
-func marsagliaPolarMethod<T: ValueType>() -> T {
-    var x1 = T(0)
-    var x2 = T(0)
-    var w = T(0)
-
-    while w >= T(1) || w == T(0) {
-        x1 = T(2) * uniform() - T(1);
-        x2 = T(2) * uniform() - T(1);
-        w = x1 * x1 + x2 * x2;
-    }
-
-    w = sqrt(T(-2) * log(w) / w );
-    return x1 * w // we return y1 and discard y2
-}
-
-func marsagliaPolarMethod() -> Int {
+func marsagliaPolarMethod() -> ContinuousValue {
     var x1 = 0.0
     var x2 = 0.0
     var w = 0.0
@@ -41,13 +28,10 @@ func marsagliaPolarMethod() -> Int {
     }
 
     w = sqrt(-2 * log(w) / w );
-    return Int(x1 * w) // we return y1 and discard y2
+    return x1 * w // we return y1 and discard y2
 }
 
-public func normal<T: ValueType>() -> T {
+public func normal() -> ContinuousValue {
     return marsagliaPolarMethod()
 }
 
-public func normal() -> Int {
-    return marsagliaPolarMethod()
-}

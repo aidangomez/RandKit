@@ -11,3 +11,11 @@ public protocol DistributionType {
     // Return a random value
     func random() -> Element
 }
+
+public protocol ContinuousDistributionType: DistributionType {
+    associatedtype Element = ContinuousValue
+}
+
+public protocol DiscreteDistributionType: DistributionType {
+    associatedtype Element = DiscreteValue
+}

@@ -5,7 +5,7 @@
 // file LICENSE at the root of the source code distribution tree.
 
 
-public class RandomGenerator<Element: ValueType, D: DistributionType where D.Element == Element>: GeneratorType {
+public class RandomGenerator<Element, D: DistributionType where D.Element == Element>: GeneratorType {
     let distribution: D
 
     public init(distribution: D) {

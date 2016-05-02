@@ -5,24 +5,28 @@
 // file LICENSE at the root of the source code distribution tree.
 
 
-public func random<T: ValueType>() -> T {
+public func random() -> ContinuousValue {
     return uniform()
 }
 
-public func random<T: ValueType>(max: T) -> T {
+public func random(max: ContinuousValue) -> ContinuousValue {
     return uniform(max)
 }
 
-public func random(max: Int) -> Int {
+public func random(max: DiscreteValue) -> DiscreteValue {
     return uniform(max)
 }
 
-public func random<T: ValueType>(range: Range<Int>) -> T {
+public func random(range: Range<Int>) -> ContinuousValue {
+    return uniform(range)
+}
+
+public func random(range: Range<Int>) -> DiscreteValue {
     return uniform(range)
 }
 
 /// Return `true` with probability `p`
-public func probability<T: ValueType>(p: T) -> Bool {
-    let v = random(T(1))
+public func random(probability p: ContinuousValue) -> Bool {
+    let v: ContinuousValue = random(0..<1)
     return v < p
 }
