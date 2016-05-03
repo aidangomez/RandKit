@@ -7,11 +7,16 @@
 
 public class NormalDistribution: ContinuousDistributionType {
     public typealias Element = ContinuousValue
+    public let mean: Double
+    public let sd: Double
 
-    public init() {}
+    public init(mean: Double, sd: Double) {
+        self.mean = mean
+        self.sd = sd
+    }
 
     public func random() -> Element {
-        return normal()
+        return normal(mean: mean, sd: sd)
     }
 }
 
@@ -27,11 +32,18 @@ func marsagliaPolarMethod() -> ContinuousValue {
         w = x1 * x1 + x2 * x2;
     }
 
-    w = sqrt(-2 * log(w) / w );
+    w = sqrt(-2 * log(w) / w);
     return x1 * w // we return y1 and discard y2
 }
 
+/// The standard normal distribution
+/// `sd = 1 / sqrt(2 * π)`
 public func normal() -> ContinuousValue {
     return marsagliaPolarMethod()
+}
+
+/// The general normal distribution
+public func normal(mean mean: Double, sd: Double) -> ContinuousValue {
+    return sd * marsagliaPolarMethod() + mean
 }
 

@@ -47,10 +47,18 @@ public func uniform(range: Range<Int>) -> DiscreteValue {
 }
 
 /// Return values uniformly distributed between `[0, max)`
-public func uniform(max: ContinuousValue) -> ContinuousValue {
+public func uniform(max: Double) -> ContinuousValue {
     return ContinuousValue(max) * ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)
 }
 
-public func uniform(max: DiscreteValue) -> DiscreteValue {
+public func uniform(max: Double) -> DiscreteValue {
     return DiscreteValue(arc4random_uniform(UInt32(max)))
+}
+
+public func uniform(max: Int) -> DiscreteValue {
+    return DiscreteValue(arc4random_uniform(UInt32(max)))
+}
+
+public func uniform(max: Int) -> ContinuousValue {
+    return ContinuousValue(max) * ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)
 }
