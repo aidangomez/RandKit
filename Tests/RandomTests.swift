@@ -36,7 +36,7 @@ class RandomTests: XCTestCase {
 
         let dMean = dSamples.reduce(0.0, combine: +) / Double(n)
 
-        XCTAssertEqualWithAccuracy(dMean, 250, accuracy: 7)
+        XCTAssertEqualWithAccuracy(dMean, 250, accuracy: 10)
     }
 
     func testRandomUniformMax() {
@@ -62,7 +62,7 @@ class RandomTests: XCTestCase {
     }
 
     func testRandomNormal() {
-        let n = 10000
+        let n = 1000000
 
         let dSamples: [Double] = (0..<n).map({ _ in normal() })
 

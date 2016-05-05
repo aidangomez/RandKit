@@ -39,26 +39,34 @@ public func uniform() -> ContinuousValue {
 
 /// Return values uniformly distributed over `range`
 public func uniform(range: Range<Int>) -> ContinuousValue {
-    return ContinuousValue(range.count) * ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX) + ContinuousValue(range.startIndex)
+    return ContinuousValue(range.count) * (ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)) + ContinuousValue(range.startIndex)
 }
 
 public func uniform(range: Range<Int>) -> DiscreteValue {
     return DiscreteValue(arc4random_uniform(UInt32(range.count))) + range.startIndex
 }
 
-/// Return values uniformly distributed between `[0, max)`
-public func uniform(max: Double) -> ContinuousValue {
-    return ContinuousValue(max) * ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)
+public func uniform(range: ClosedInterval<Double>) -> ContinuousValue {
+    return (range.end - range.start) * (ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)) + range.start
 }
 
-public func uniform(max: Double) -> DiscreteValue {
-    return DiscreteValue(arc4random_uniform(UInt32(max)))
+public func uniform(range: HalfOpenInterval<Double>) -> ContinuousValue {
+    return (range.end - DBL_MIN - range.start) * (ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)) + range.start
+}
+
+/// Return values uniformly distributed between `[0, max)`
+public func uniform(max: Double) -> ContinuousValue {
+    return max * (ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX))
 }
 
 public func uniform(max: Int) -> DiscreteValue {
     return DiscreteValue(arc4random_uniform(UInt32(max)))
 }
 
-public func uniform(max: Int) -> ContinuousValue {
-    return ContinuousValue(max) * ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)
+public func uniform(exclusiveMin min: Double, exclusiveMax max: Double) -> ContinuousValue {
+    return (max - 2 * DBL_MIN - min) * (ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)) + min + DBL_MIN
+}
+
+public func uniform(exclusiveMin min: Double, inclusiveMax max: Double) -> ContinuousValue {
+    return (max - (min + DBL_MIN)) * (ContinuousValue(arc4random()) / ContinuousValue(UINT32_MAX)) + (min + DBL_MIN)
 }

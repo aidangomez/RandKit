@@ -27,8 +27,8 @@ func marsagliaPolarMethod() -> ContinuousValue {
     var w = 0.0
 
     while w >= 1 || w == 0 {
-        x1 = 2 * uniform() - 1;
-        x2 = 2 * uniform() - 1;
+        x1 = 2 * uniform(exclusiveMin: 0, exclusiveMax: 1) - 1;
+        x2 = 2 * uniform(exclusiveMin: 0, exclusiveMax: 1) - 1;
         w = x1 * x1 + x2 * x2;
     }
 

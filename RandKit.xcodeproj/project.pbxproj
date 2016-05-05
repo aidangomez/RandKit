@@ -7,12 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8C92B5D01CD6996B009794F1 /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5CF1CD6996B009794F1 /* Distribution.swift */; };
-		8C92B5D11CD6996B009794F1 /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5CF1CD6996B009794F1 /* Distribution.swift */; };
+		8C1ECEC51CDA93BE00CAB98D /* Exponential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEBB1CDA93BE00CAB98D /* Exponential.swift */; };
+		8C1ECEC61CDA93BE00CAB98D /* Exponential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEBB1CDA93BE00CAB98D /* Exponential.swift */; };
+		8C1ECEC71CDA93BE00CAB98D /* Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEBC1CDA93BE00CAB98D /* Normal.swift */; };
+		8C1ECEC81CDA93BE00CAB98D /* Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEBC1CDA93BE00CAB98D /* Normal.swift */; };
+		8C1ECEC91CDA93BE00CAB98D /* Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEBD1CDA93BE00CAB98D /* Uniform.swift */; };
+		8C1ECECA1CDA93BE00CAB98D /* Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEBD1CDA93BE00CAB98D /* Uniform.swift */; };
+		8C1ECECB1CDA93BE00CAB98D /* Weibull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEBE1CDA93BE00CAB98D /* Weibull.swift */; };
+		8C1ECECC1CDA93BE00CAB98D /* Weibull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEBE1CDA93BE00CAB98D /* Weibull.swift */; };
+		8C1ECECD1CDA93BE00CAB98D /* Bernoulli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC01CDA93BE00CAB98D /* Bernoulli.swift */; };
+		8C1ECECE1CDA93BE00CAB98D /* Bernoulli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC01CDA93BE00CAB98D /* Bernoulli.swift */; };
+		8C1ECECF1CDA93BE00CAB98D /* Binomial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC11CDA93BE00CAB98D /* Binomial.swift */; };
+		8C1ECED01CDA93BE00CAB98D /* Binomial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC11CDA93BE00CAB98D /* Binomial.swift */; };
+		8C1ECED11CDA93BE00CAB98D /* Geometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC21CDA93BE00CAB98D /* Geometric.swift */; };
+		8C1ECED21CDA93BE00CAB98D /* Geometric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC21CDA93BE00CAB98D /* Geometric.swift */; };
+		8C1ECED31CDA93BE00CAB98D /* Poisson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC31CDA93BE00CAB98D /* Poisson.swift */; };
+		8C1ECED41CDA93BE00CAB98D /* Poisson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC31CDA93BE00CAB98D /* Poisson.swift */; };
+		8C1ECED51CDA93BE00CAB98D /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC41CDA93BE00CAB98D /* Distribution.swift */; };
+		8C1ECED61CDA93BE00CAB98D /* Distribution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEC41CDA93BE00CAB98D /* Distribution.swift */; };
+		8C1ECEEA1CDBB08E00CAB98D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDC1CDBB08E00CAB98D /* Info.plist */; };
+		8C1ECEEB1CDBB08E00CAB98D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDC1CDBB08E00CAB98D /* Info.plist */; };
+		8C1ECEF71CDBB1E200CAB98D /* GeometricTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDB1CDBB08E00CAB98D /* GeometricTests.swift */; };
+		8C1ECF011CDBB1ED00CAB98D /* BernoulliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECED81CDBB08E00CAB98D /* BernoulliTests.swift */; };
+		8C1ECF021CDBB1ED00CAB98D /* BinomialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECED91CDBB08E00CAB98D /* BinomialTests.swift */; };
+		8C1ECF031CDBB1ED00CAB98D /* ExponentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDA1CDBB08E00CAB98D /* ExponentialTests.swift */; };
+		8C1ECF041CDBB1ED00CAB98D /* GeometricTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDB1CDBB08E00CAB98D /* GeometricTests.swift */; };
+		8C1ECF051CDBB1ED00CAB98D /* NormalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDD1CDBB08E00CAB98D /* NormalTests.swift */; };
+		8C1ECF061CDBB1ED00CAB98D /* PoissonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDE1CDBB08E00CAB98D /* PoissonTests.swift */; };
+		8C1ECF071CDBB1ED00CAB98D /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDF1CDBB08E00CAB98D /* RandomTests.swift */; };
+		8C1ECF081CDBB1ED00CAB98D /* UniformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEE01CDBB08E00CAB98D /* UniformTests.swift */; };
+		8C1ECF091CDBB1ED00CAB98D /* WeibullTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEE11CDBB08E00CAB98D /* WeibullTests.swift */; };
+		8C1ECF0B1CDBB1EF00CAB98D /* BernoulliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECED81CDBB08E00CAB98D /* BernoulliTests.swift */; };
+		8C1ECF0C1CDBB1EF00CAB98D /* BinomialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECED91CDBB08E00CAB98D /* BinomialTests.swift */; };
+		8C1ECF0D1CDBB1EF00CAB98D /* ExponentialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDA1CDBB08E00CAB98D /* ExponentialTests.swift */; };
+		8C1ECF0E1CDBB1EF00CAB98D /* NormalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDD1CDBB08E00CAB98D /* NormalTests.swift */; };
+		8C1ECF0F1CDBB1EF00CAB98D /* PoissonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDE1CDBB08E00CAB98D /* PoissonTests.swift */; };
+		8C1ECF101CDBB1EF00CAB98D /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEDF1CDBB08E00CAB98D /* RandomTests.swift */; };
+		8C1ECF111CDBB1EF00CAB98D /* UniformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEE01CDBB08E00CAB98D /* UniformTests.swift */; };
+		8C1ECF121CDBB1EF00CAB98D /* WeibullTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1ECEE11CDBB08E00CAB98D /* WeibullTests.swift */; };
 		8C92B5DA1CD69C17009794F1 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5D91CD69C17009794F1 /* Value.swift */; };
 		8C92B5DB1CD69C17009794F1 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5D91CD69C17009794F1 /* Value.swift */; };
-		8C92B5E71CD6B4FF009794F1 /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5E61CD6B4FF009794F1 /* RandomTests.swift */; };
-		8C92B5E81CD6B4FF009794F1 /* RandomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C92B5E61CD6B4FF009794F1 /* RandomTests.swift */; };
 		8CBFE8311CD41692002A8929 /* RandKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBFE8261CD41692002A8929 /* RandKit.framework */; };
 		8CBFE85C1CD416FF002A8929 /* RandKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CBFE8521CD416FF002A8929 /* RandKit.framework */; };
 		8CBFE86E1CD41773002A8929 /* RandKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBFE86B1CD41773002A8929 /* RandKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,10 +55,6 @@
 		8CBFE87F1CD41A56002A8929 /* RandomGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE87D1CD41A56002A8929 /* RandomGenerator.swift */; };
 		8CBFE8811CD41AA4002A8929 /* RandomValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8801CD41AA4002A8929 /* RandomValue.swift */; };
 		8CBFE8821CD41AA4002A8929 /* RandomValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8801CD41AA4002A8929 /* RandomValue.swift */; };
-		8CBFE8851CD42873002A8929 /* Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8841CD42873002A8929 /* Uniform.swift */; };
-		8CBFE8861CD42873002A8929 /* Uniform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8841CD42873002A8929 /* Uniform.swift */; };
-		8CBFE8881CD4289B002A8929 /* Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8871CD4289B002A8929 /* Normal.swift */; };
-		8CBFE8891CD4289B002A8929 /* Normal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CBFE8871CD4289B002A8929 /* Normal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,20 +75,34 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8C92B5CF1CD6996B009794F1 /* Distribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distribution.swift; sourceTree = "<group>"; };
+		8C1ECEBB1CDA93BE00CAB98D /* Exponential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exponential.swift; sourceTree = "<group>"; };
+		8C1ECEBC1CDA93BE00CAB98D /* Normal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Normal.swift; sourceTree = "<group>"; };
+		8C1ECEBD1CDA93BE00CAB98D /* Uniform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uniform.swift; sourceTree = "<group>"; };
+		8C1ECEBE1CDA93BE00CAB98D /* Weibull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weibull.swift; sourceTree = "<group>"; };
+		8C1ECEC01CDA93BE00CAB98D /* Bernoulli.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bernoulli.swift; sourceTree = "<group>"; };
+		8C1ECEC11CDA93BE00CAB98D /* Binomial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binomial.swift; sourceTree = "<group>"; };
+		8C1ECEC21CDA93BE00CAB98D /* Geometric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Geometric.swift; sourceTree = "<group>"; };
+		8C1ECEC31CDA93BE00CAB98D /* Poisson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poisson.swift; sourceTree = "<group>"; };
+		8C1ECEC41CDA93BE00CAB98D /* Distribution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distribution.swift; sourceTree = "<group>"; };
+		8C1ECED81CDBB08E00CAB98D /* BernoulliTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BernoulliTests.swift; sourceTree = "<group>"; };
+		8C1ECED91CDBB08E00CAB98D /* BinomialTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BinomialTests.swift; sourceTree = "<group>"; };
+		8C1ECEDA1CDBB08E00CAB98D /* ExponentialTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExponentialTests.swift; sourceTree = "<group>"; };
+		8C1ECEDB1CDBB08E00CAB98D /* GeometricTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeometricTests.swift; sourceTree = "<group>"; };
+		8C1ECEDC1CDBB08E00CAB98D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C1ECEDD1CDBB08E00CAB98D /* NormalTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalTests.swift; sourceTree = "<group>"; };
+		8C1ECEDE1CDBB08E00CAB98D /* PoissonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoissonTests.swift; sourceTree = "<group>"; };
+		8C1ECEDF1CDBB08E00CAB98D /* RandomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomTests.swift; sourceTree = "<group>"; };
+		8C1ECEE01CDBB08E00CAB98D /* UniformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniformTests.swift; sourceTree = "<group>"; };
+		8C1ECEE11CDBB08E00CAB98D /* WeibullTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeibullTests.swift; sourceTree = "<group>"; };
 		8C92B5D91CD69C17009794F1 /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
-		8C92B5E61CD6B4FF009794F1 /* RandomTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomTests.swift; sourceTree = "<group>"; };
 		8CBFE8261CD41692002A8929 /* RandKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBFE8301CD41692002A8929 /* RandKitTests.iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandKitTests.iOS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBFE8521CD416FF002A8929 /* RandKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBFE85B1CD416FF002A8929 /* RandKitTests.OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandKitTests.OSX.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CBFE86A1CD41773002A8929 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CBFE86B1CD41773002A8929 /* RandKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RandKit.h; sourceTree = "<group>"; };
-		8CBFE8701CD41898002A8929 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CBFE87D1CD41A56002A8929 /* RandomGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomGenerator.swift; sourceTree = "<group>"; };
 		8CBFE8801CD41AA4002A8929 /* RandomValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomValue.swift; sourceTree = "<group>"; };
-		8CBFE8841CD42873002A8929 /* Uniform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Uniform.swift; sourceTree = "<group>"; };
-		8CBFE8871CD4289B002A8929 /* Normal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Normal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +139,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C1ECEB91CDA93BE00CAB98D /* Distributions */ = {
+			isa = PBXGroup;
+			children = (
+				8C1ECEBA1CDA93BE00CAB98D /* Continuous */,
+				8C1ECEBF1CDA93BE00CAB98D /* Discrete */,
+				8C1ECEC41CDA93BE00CAB98D /* Distribution.swift */,
+			);
+			path = Distributions;
+			sourceTree = "<group>";
+		};
+		8C1ECEBA1CDA93BE00CAB98D /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				8C1ECEBB1CDA93BE00CAB98D /* Exponential.swift */,
+				8C1ECEBC1CDA93BE00CAB98D /* Normal.swift */,
+				8C1ECEBD1CDA93BE00CAB98D /* Uniform.swift */,
+				8C1ECEBE1CDA93BE00CAB98D /* Weibull.swift */,
+			);
+			path = Continuous;
+			sourceTree = "<group>";
+		};
+		8C1ECEBF1CDA93BE00CAB98D /* Discrete */ = {
+			isa = PBXGroup;
+			children = (
+				8C1ECEC01CDA93BE00CAB98D /* Bernoulli.swift */,
+				8C1ECEC11CDA93BE00CAB98D /* Binomial.swift */,
+				8C1ECEC21CDA93BE00CAB98D /* Geometric.swift */,
+				8C1ECEC31CDA93BE00CAB98D /* Poisson.swift */,
+			);
+			path = Discrete;
+			sourceTree = "<group>";
+		};
+		8C1ECED71CDBB08E00CAB98D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8C1ECED81CDBB08E00CAB98D /* BernoulliTests.swift */,
+				8C1ECED91CDBB08E00CAB98D /* BinomialTests.swift */,
+				8C1ECEDA1CDBB08E00CAB98D /* ExponentialTests.swift */,
+				8C1ECEDB1CDBB08E00CAB98D /* GeometricTests.swift */,
+				8C1ECEDC1CDBB08E00CAB98D /* Info.plist */,
+				8C1ECEDD1CDBB08E00CAB98D /* NormalTests.swift */,
+				8C1ECEDE1CDBB08E00CAB98D /* PoissonTests.swift */,
+				8C1ECEDF1CDBB08E00CAB98D /* RandomTests.swift */,
+				8C1ECEE01CDBB08E00CAB98D /* UniformTests.swift */,
+				8C1ECEE11CDBB08E00CAB98D /* WeibullTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		8C92B5D51CD69BF6009794F1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,7 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				8CBFE8691CD41773002A8929 /* Source */,
-				8CBFE86C1CD41773002A8929 /* Tests */,
+				8C1ECED71CDBB08E00CAB98D /* Tests */,
 				8CBFE86A1CD41773002A8929 /* Info.plist */,
 				8CBFE8271CD41692002A8929 /* Products */,
 			);
@@ -128,31 +221,12 @@
 			isa = PBXGroup;
 			children = (
 				8CBFE86B1CD41773002A8929 /* RandKit.h */,
+				8C1ECEB91CDA93BE00CAB98D /* Distributions */,
 				8C92B5D51CD69BF6009794F1 /* Utilities */,
-				8CBFE8831CD42873002A8929 /* Distributions */,
 				8CBFE87D1CD41A56002A8929 /* RandomGenerator.swift */,
 				8CBFE8801CD41AA4002A8929 /* RandomValue.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		8CBFE86C1CD41773002A8929 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				8CBFE8701CD41898002A8929 /* Info.plist */,
-				8C92B5E61CD6B4FF009794F1 /* RandomTests.swift */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		8CBFE8831CD42873002A8929 /* Distributions */ = {
-			isa = PBXGroup;
-			children = (
-				8CBFE8871CD4289B002A8929 /* Normal.swift */,
-				8CBFE8841CD42873002A8929 /* Uniform.swift */,
-				8C92B5CF1CD6996B009794F1 /* Distribution.swift */,
-			);
-			path = Distributions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +372,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1ECEEA1CDBB08E00CAB98D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C1ECEEB1CDBB08E00CAB98D /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,12 +405,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CBFE8881CD4289B002A8929 /* Normal.swift in Sources */,
-				8CBFE8851CD42873002A8929 /* Uniform.swift in Sources */,
+				8C1ECEC91CDA93BE00CAB98D /* Uniform.swift in Sources */,
 				8C92B5DA1CD69C17009794F1 /* Value.swift in Sources */,
+				8C1ECECF1CDA93BE00CAB98D /* Binomial.swift in Sources */,
+				8C1ECED11CDA93BE00CAB98D /* Geometric.swift in Sources */,
+				8C1ECECB1CDA93BE00CAB98D /* Weibull.swift in Sources */,
+				8C1ECEC71CDA93BE00CAB98D /* Normal.swift in Sources */,
 				8CBFE87E1CD41A56002A8929 /* RandomGenerator.swift in Sources */,
-				8C92B5D01CD6996B009794F1 /* Distribution.swift in Sources */,
 				8CBFE8811CD41AA4002A8929 /* RandomValue.swift in Sources */,
+				8C1ECED31CDA93BE00CAB98D /* Poisson.swift in Sources */,
+				8C1ECED51CDA93BE00CAB98D /* Distribution.swift in Sources */,
+				8C1ECECD1CDA93BE00CAB98D /* Bernoulli.swift in Sources */,
+				8C1ECEC51CDA93BE00CAB98D /* Exponential.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,7 +424,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C92B5E71CD6B4FF009794F1 /* RandomTests.swift in Sources */,
+				8C1ECF081CDBB1ED00CAB98D /* UniformTests.swift in Sources */,
+				8C1ECF051CDBB1ED00CAB98D /* NormalTests.swift in Sources */,
+				8C1ECF071CDBB1ED00CAB98D /* RandomTests.swift in Sources */,
+				8C1ECF021CDBB1ED00CAB98D /* BinomialTests.swift in Sources */,
+				8C1ECF091CDBB1ED00CAB98D /* WeibullTests.swift in Sources */,
+				8C1ECF041CDBB1ED00CAB98D /* GeometricTests.swift in Sources */,
+				8C1ECF061CDBB1ED00CAB98D /* PoissonTests.swift in Sources */,
+				8C1ECF011CDBB1ED00CAB98D /* BernoulliTests.swift in Sources */,
+				8C1ECF031CDBB1ED00CAB98D /* ExponentialTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,12 +440,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CBFE8891CD4289B002A8929 /* Normal.swift in Sources */,
-				8CBFE8861CD42873002A8929 /* Uniform.swift in Sources */,
+				8C1ECECA1CDA93BE00CAB98D /* Uniform.swift in Sources */,
 				8C92B5DB1CD69C17009794F1 /* Value.swift in Sources */,
+				8C1ECED01CDA93BE00CAB98D /* Binomial.swift in Sources */,
+				8C1ECED21CDA93BE00CAB98D /* Geometric.swift in Sources */,
+				8C1ECECC1CDA93BE00CAB98D /* Weibull.swift in Sources */,
+				8C1ECEC81CDA93BE00CAB98D /* Normal.swift in Sources */,
 				8CBFE87F1CD41A56002A8929 /* RandomGenerator.swift in Sources */,
-				8C92B5D11CD6996B009794F1 /* Distribution.swift in Sources */,
 				8CBFE8821CD41AA4002A8929 /* RandomValue.swift in Sources */,
+				8C1ECED41CDA93BE00CAB98D /* Poisson.swift in Sources */,
+				8C1ECED61CDA93BE00CAB98D /* Distribution.swift in Sources */,
+				8C1ECECE1CDA93BE00CAB98D /* Bernoulli.swift in Sources */,
+				8C1ECEC61CDA93BE00CAB98D /* Exponential.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +459,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C92B5E81CD6B4FF009794F1 /* RandomTests.swift in Sources */,
+				8C1ECF111CDBB1EF00CAB98D /* UniformTests.swift in Sources */,
+				8C1ECF0E1CDBB1EF00CAB98D /* NormalTests.swift in Sources */,
+				8C1ECF101CDBB1EF00CAB98D /* RandomTests.swift in Sources */,
+				8C1ECF0B1CDBB1EF00CAB98D /* BernoulliTests.swift in Sources */,
+				8C1ECF121CDBB1EF00CAB98D /* WeibullTests.swift in Sources */,
+				8C1ECF0C1CDBB1EF00CAB98D /* BinomialTests.swift in Sources */,
+				8C1ECF0F1CDBB1EF00CAB98D /* PoissonTests.swift in Sources */,
+				8C1ECEF71CDBB1E200CAB98D /* GeometricTests.swift in Sources */,
+				8C1ECF0D1CDBB1EF00CAB98D /* ExponentialTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

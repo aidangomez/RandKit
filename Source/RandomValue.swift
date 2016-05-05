@@ -13,14 +13,6 @@ public func random(max: Double) -> ContinuousValue {
     return uniform(max)
 }
 
-public func random(max: Double) -> DiscreteValue {
-    return uniform(max)
-}
-
-public func random(max: Int) -> ContinuousValue {
-    return uniform(max)
-}
-
 public func random(max: Int) -> DiscreteValue {
     return uniform(max)
 }
@@ -34,9 +26,8 @@ public func random(range: Range<Int>) -> DiscreteValue {
 }
 
 /// Return `true` with probability `p`
-public func random(probability p: Double) -> Bool {
-    let v: ContinuousValue = random(0..<1)
-    return v < p
+public func random(probability p: ContinuousValue) -> Bool {
+    return bernoulli(probability: p)
 }
 
 /// Generate `sample` random values within range `inRange`
