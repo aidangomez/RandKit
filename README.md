@@ -1,4 +1,6 @@
-# RandKit
+# RandKit - DEPRECATED 
+Use this
+https://github.com/phimage/RandomDistributionKit
 
 Random number generation for Swift.
 
