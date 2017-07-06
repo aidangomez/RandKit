@@ -1,3 +1,7 @@
+**DEPRECATED** - use 
+https://github.com/nvzqz/RandomKit
+
+
 # RandKit
 
 Random number generation for Swift.
